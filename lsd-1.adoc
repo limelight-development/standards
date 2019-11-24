@@ -1,0 +1,88 @@
+This document is written to ensure that code is written to a set style, providing a high level of technical interoperability between joint modules and Lua code.
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+
+== Code Layout
+
+* Code MUST use tabs for indenting, not spaces.
+* Code MUST NOT use C-Style operators such as /* */, //, != and !.
+* Semi colons MAY be used in run-on single line operations and MUST NOT be used elsewhere.
+** Ex: if condition then x = 7; y = 2; return x, y end
+
+=== Line Lengths
+
+* Lines MAY be limited to 100 characters.
+* Lines SHOULD be limited to 150 characters.
+* Lines MUST be limited to 250 characters.
+
+=== Blank Lines / Whitespace
+
+* Empty lines MUST NOT contain trailing or leading whitespace.
+* Top-level definitions MUST by separated by a minimum of a single blank line.
+* Blank lines MAY be used within method or function bodies to improve readability.
+
+== Encoding
+
+* Files MUST be encoded in UTF-8 or ASCII encodings.
+
+== Operator and Function Whitespace
+
+* Whitespace SHOULD NOT be placed around brackets.
+* Whitespace SHOULD NOT be placed immediately prior to a comma.
+* A single space MUST be placed on each side of assignment, comparison and arithmetic operators.
+
+== Naming Conventions
+
+* Variables, Fields and Methods MUST use either lowerCamelCase or UpperCamelCase.
+* Enumerations must use CAPITALIZED_WITH_UNDERSCORES
+* Variable names SHOULD be short and self-descriptive.
+* Variable names SHOULD NOT be single letters, except during loops or where convention is well known.
+** Ex: i for loop iterator, x for loop iterator's value, k for key, v for value, x/y for coordinate pairs.
+
+== Comments
+
+* The first word of a comment block MUST be capitalized, unless the word is an identifier.
+* Comments MAY end with a full stop.
+* Comments MUST either proceed the documented block, or be on the documented line.
+
+=== Block Comments
+
+* Block Comments apply to either the document globally (DocBlock) or to the following code block.
+* Block Comments MUST end with ]]--, not --]].
+
+=== Inline Comments
+
+* Inline Comments MUST have whitespace between the comment identifier (--) and the start of the comment.
+
+=== FuncDocs
+
+* All functions MUST include a LuaDoc style function documentation comment.
+* FuncDocs MUST start with a triple dash (---), with secondary lines starting with a double-dash (--).
+* Descriptions MAY span multiple lines.
+* Descriptions MUST end with a full stop.
+
+=== File Header
+
+* The header MUST start with a double dash, double open square bracket, and double dash (--[[--).
+* The first line contains the opening, a space, and the short description.
+* Following lines contain the extended description.
+* Following lines contain the tags.
+* Final line contains the closing tag, which is a double dash, double close square bracket, double dash (--]]--)
+* The file header MUST contain the author, copyright and release tags.
+
+=== Tags
+
+* Tag lines MUST start with a double dash, a space and a @.
+* Tags list:
+** author - Defines the author of a module or file.
+** copyright - Defines the copyright of the module/file.
+** field - Descripts a table field definition.
+** param - Takes two arguments, the name of a function param and the description.
+** release - String describing the release of the module or file.
+** return - Describes a function return value.
+** see - Refer to other function or table.
+** usage - Describe the use of the function or variable.
+
+== String Quoting
+
+* Strings SHOULD use double quote delimiters.
