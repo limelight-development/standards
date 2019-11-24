@@ -1,0 +1,24 @@
+= Limelight Standards Document 3: Resource Filepath Requirements
+John Internet <internet@limelightgaming.net>
+
+This document is written to ensure that resources are in the correct path, to allow interoperability between various delivery systems (Legacy DL, FastDL, WorkshopDL) and backends (Windows Game Server, Linux Game Server).
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+
+== General
+
+* Filepaths MUST be lowercase.
+** Example: models/My Awesome Model/topKEK.mdl becomes models/my awesome model/topkek.mdl
+
+* Filepaths MUST have no spaces.
+** Example: models/my awesome model/topkek.mdl becomes models/my_awesome_model/topkek.mdl
+
+* File names MUST be specific.
+** Example: models/my_awesome_model/topkek.mdl becomes models/my_awesome_model/vehicle_tracker.mdl
+
+* Filepaths MUST contain (at minimum) an author name.
+** Example: models/my_awesome_model/vehicle_tracker.mdl becomes models/internet/my_awesome_model/vehicle_tracker.mdl
+
+* Filepaths SHOULD contain an update name, unless the resource is isolated and self-descriptive.
+** Example 1: models/internet/my_awesome_model/vehicle_tracker.mdl becomes models/internet/vehicle_tracker.mdl
+** Example 2: models/internet/vehicle_update/tahoe.mdl
