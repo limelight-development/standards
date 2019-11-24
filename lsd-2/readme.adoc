@@ -1,0 +1,61 @@
+= Limelight Standards Document 2: PHP Style Guide
+John Internet <internet@limelightgaming.net>
+
+This document is written to ensure that code is written to a set style, providing a high level of technical interoperability between joint modules, PHP code and other frontends.
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+
+== Code Layout
+
+* Code MUST use tabs for indenting, not spaces.
+
+=== Tags
+
+* To allow the greatest range of applicable systems (as many have disabled short tags), code MUST use long php tags (<?php ?>) or short echo tags (<?= ?>).
+* Code MUST NOT use other php tags, such as short php tags (<? ?>)
+
+=== Encoding
+
+* Files MUST be encoded in UTF-8 without BOM or ASCII encodings.
+
+== Naming Conventions
+
+* Classes and Namespaces must follow https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md[PSR-4].
+* Class names MUST be declared in UpperCamelCase.
+* Constants MUST be declared in UPPERCASE_WITH_UNDERSCORES.
+* Function names MUST be declared in either UpperCamelCase or camelCase.
+
+== Logical Splitting
+
+* Files SHOULD be split between declarations (defining functions and classes) or running code (creating classes, outputting results etc)
+
+* Logic means any code not related to the declaration of the class.
+** For example, using include or require, connecting to databases, changing settings, outputting errors or output.
+
+== Classes
+
+=== Namespacing
+
+* Each class MUST be in its own file.
+* Each namespace MUST have at least a vendor name (ie. Limelight).
+* Each self-contained project SHOULD have its own namespace (ie. Limelight\Suggestions)
+
+=== Constants
+
+* Constants must be declared in UPPERCASE_WITH_UNDERSCORES.
+
+=== Properties
+
+* Properties SHOULD be defined in camelCase.
+* Property naming MUST remain constant for a given scope, at method, class or package level.
+
+=== Methods
+
+* Method names must be declared in UpperCamelCase.
+
+=== Docs
+
+* Method level PHPDocs MUST be defined.
+* Class level PHPDocs SHOULD be defined.
+* File level PHPDocs MAY be defined.
+* Property level PHPDocs MAY be defined when their purpose is not evident.
