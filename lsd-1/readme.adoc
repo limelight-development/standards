@@ -1,4 +1,4 @@
-= Limelight Standards Document 1
+= Limelight Standards Document 1: Lua Style Guide
 John Internet <internet@limelightgaming.net>
 
 This document is written to ensure that code is written to a set style, providing a high level of technical interoperability between joint modules and Lua code.
