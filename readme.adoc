@@ -2,6 +2,18 @@
 
 This repository contains all the various Limelight Standards Documents.
 
+== Implementation Process
+
+New documents are written in individual branches.
+When complete, the branches are PR'd.
+
+After the PR is made, it is discussed internally within the link:https://github.com/orgs/limelight-development/teams/all[Limelight Development Team]
+
+If the document is approved, it's merged and added to the document list.
+If it's denied, the PR is closed.
+
+== Documents
+
 .Current Standards Documents
 |===
 | Document | Short | Status
