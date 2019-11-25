@@ -18,5 +18,5 @@ If it's denied, the PR is closed.
 |===
 | Document | Short | Status
 | link:lsd-1/readme.adoc[LSD-1] | Lua Style Guide | Active
-| link:lsd-2/readme.adoc[LSD-2] | PHP Style Guide | Development
+| link:lsd-2/readme.adoc[LSD-2] | PHP Style Guide | Active
 | link:lsd-3/readme.adoc[LSD-3] | Resource Filepath Requirements | Active
