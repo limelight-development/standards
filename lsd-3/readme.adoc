@@ -10,7 +10,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 * Filepaths MUST be lowercase.
 ** Example: models/My Awesome Model/topKEK.mdl becomes models/my awesome model/topkek.mdl
 
-* Filepaths MUST have no spaces.
+* Filepaths MUST NOT contain spaces.
 ** Example: models/my awesome model/topkek.mdl becomes models/my_awesome_model/topkek.mdl
 
 * File names MUST be specific.
