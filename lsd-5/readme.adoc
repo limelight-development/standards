@@ -1,0 +1,48 @@
+= Limelight Standards Document 5: UI Elements Guidelines
+John Internet <internet@limelightgaming.net>
+
+This document is written to bring the various interactive elements in-line in regards to how they're interacted with.
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+
+== Preview
+
+An interactive view of this document can be found at https://limelightgaming.net/services/ui/guidelines/
+
+== UI Assets
+
+=== Colours
+
+UI colours SHOULD be rgba(41, 41, 41, 0.9), rgba(36, 70, 103, 0.9), rgba(95, 12, 12, 0.9) or rgba(139, 35, 35, 0.9).
+
+=== Fonts
+
+HUD Elements and Panel Titles SHOULD use "Saira Regular" typeface, with weight 400.
+Panel Bodies SHOULD use "Segoe UI Regular" typeface, with weight 400.
+
+=== Icons
+
+Icons SHOULD be from Material Icons, MAY be from Font Awesome and MAY be individually designed if neither fit a particular use-case.
+
+== Container Borders
+
+Outer containers SHOULD have a border radius of between 3px and 5px.
+Outer containers SHOULD have a 3px translucent bottom border of colour rgba(0, 0, 0, 0.2) to provide a 3d effect.
+
+== Progress Bars
+
+=== Use
+
+Progress bars are used to show show progress of a variable.
+Colour transition MAY be used to reinforce variable progression.
+
+=== Colour
+
+Base colours SHOULD be rgb(89, 127, 88), rgb(179, 74, 78), rgb(179, 95, 74) or rgb(112, 145, 187).
+
+== Button Colours
+
+rgb(179, 74, 78) MUST be used for attention required buttons and close buttons.
+rgb(89, 127, 88) SHOULD be used for save / confirmation buttons.
+rgb(112, 145, 187) or rgb(66, 165, 245) SHOULD be used as a default.
+rgba(41, 41, 41, 0.9) and rgb(179, 95, 74) MAY be used where they fit in a particular instance.
