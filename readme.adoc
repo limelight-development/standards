@@ -20,5 +20,5 @@ If it's denied, the PR is closed.
 | link:lsd-1/readme.adoc[LSD-1] | Lua Style Guide | Active
 | link:lsd-2/readme.adoc[LSD-2] | PHP Style Guide | Active
 | link:lsd-3/readme.adoc[LSD-3] | Resource Filepath Requirements | Active
-| link:../../blob/interaction-standards/lsd-4/readme.adoc[LSD-4] | Ingame Interactive Element Guidelines | Draft
-| link:../../blob/ui-guidelines/lsd-5/readme.adoc[LSD-5] | UI Guidelines | Draft
+| link:../../blob/interaction-standards/lsd-4/readme.adoc[LSD-4] | Ingame Interactive Element Guidelines | Vote
+| link:../../blob/ui-guidelines/lsd-5/readme.adoc[LSD-5] | UI Guidelines | Vote
