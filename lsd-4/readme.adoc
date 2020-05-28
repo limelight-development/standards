@@ -1,0 +1,33 @@
+= Limelight Standards Document 4: Ingame Interactive Element Guidelines
+John Internet <internet@limelightgaming.net>
+
+This document is written to bring the various interactive elements in-line in regards to how they're interacted with.
+
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in http://www.ietf.org/rfc/rfc2119.txt[RFC 2119].
+
+== Keyboard Interactions
+
+The keyboard interactions section handles how entities are interacted with, using the keyboard. Not very surprising.
+
+None of these actions are required, so don't call for addition if there's no action they'd bind to.
+
+Secondary use function SHOULD be handled by primary use if no primary use is defined.
+Secondary use should SHOULD primary use if no secondary use is defined.
+
+Recover SHOULD declare an error message in chat if recovery is not supported.
+
+.Keyboard Interactions
+|===
+|Key / Key Combo |Action |Description
+|E
+|Primary Use
+|The primary action of an entity. Sounding a panic button alarm, ringing a doorbell, etc.
+
+|Shift + E
+|Secondary Use
+|Opening a settings menu.
+
+|R
+|Recover
+|Returning an item to inventory.
+|===
