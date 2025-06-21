@@ -59,32 +59,19 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 === FuncDocs
 
-* All functions MUST include a LuaDoc style function documentation comment.
-* FuncDocs MUST start with a triple dash (---), with secondary lines starting with a double-dash (--).
+* All functions MUST include a link:https://luals.github.io/wiki/annotations/[LuaCATS] function documentation comment.
+* FuncDocs lines MUST start with a triple dash (---)
 * Descriptions MAY span multiple lines.
 * Descriptions MUST end with a full stop.
 
 === File Header
 
-* The header MUST start with a double dash, double open square bracket, and double dash (--[[--).
+* The header MUST start with a triple dash or in legacy cases a double dash, double open square bracket, and double dash (--[[--).
 * The first line contains the opening, a space, and the short description.
 * Following lines contain the extended description.
 * Following lines contain the tags.
-* Final line contains the closing tag, which is a double dash, double close square bracket, double dash (--]]--)
+* If the legacy header is used, the final line contains the closing tag, which is a double dash, double close square bracket, double dash (--]]--)
 * The file header MUST contain the author, copyright and release tags.
-
-=== Tags
-
-* Tag lines MUST start with a double dash, a space and a @.
-* Tags list:
-** author - Defines the author of a module or file.
-** copyright - Defines the copyright of the module/file.
-** field - Descripts a table field definition.
-** param - Takes two arguments, the name of a function param and the description.
-** release - String describing the release of the module or file.
-** return - Describes a function return value.
-** see - Refer to other function or table.
-** usage - Describe the use of the function or variable.
 
 == String Quoting
 
